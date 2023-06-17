@@ -1,6 +1,12 @@
+const Portfolio = require('../models/Portfolio');
 
-const getIndexPage = (req, res) =>{
-    res.status(200).render('index');
+const getIndexPage = async (req, res) =>{
+    const portfolios = await Portfolio.find({}).sort('-createdAt');
+      
+      res.status(200).render('index',{
+        portfolios
+      })
+   
 }
 
 const getAddPage = (req, res) =>{
