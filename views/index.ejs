@@ -71,10 +71,20 @@
                             <img class="img-fluid rounded mb-5" src="<%= portfolios[i].image %>" alt="..." />
                             <!-- Portfolio Modal - Text-->
                             <p class="mb-4"><%= portfolios[i].description %></p>
-                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                           
+                            <a class="btn btn-warning btn-xl text-uppercase" type="button" href="/portfolio/edit/<%= portfolios[i]._id %>">
+                                <i class="fa-regular fa-pen-to-square"></i>
+                                <span>Edit</span>
+                                
+                            </a>
+                            <a class="btn btn-danger btn-xl text-uppercase"  href="/portfolio/<%=portfolios[i]._id %>?_method=DELETE" onclick="return confirm('Are you sure!')" type="button">
+                                <i class="fa-regular fa-trash"></i><span>Delete</span>
+                                
+                            </a>
+                            <a class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal">
                                 <i class="fas fa-xmark fa-fw"></i>
                                 Close Window
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

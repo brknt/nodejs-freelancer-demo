@@ -8,6 +8,7 @@ router.get('/add', pageController.getAddPage);
 router.get('/about', pageController.getAboutPage);
 router.get('/contact', pageController.getContactPage);
 
+
 module.exports = {
     routes: router
 }
