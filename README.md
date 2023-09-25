@@ -39,3 +39,13 @@ You can check with
 ## Screenshot:
 
 ![home](https://github.com/brknt/nodejs-freelancer-demo/blob/main/image1.png)
+
+## Author
+### Berkant Güneş
+
+[github](https://github.com/brknt)
+[linkedin](https://www.linkedin.com/in/berkant-g%C3%BCne%C5%9F/)
+
+## License
+
+No License. Be comfortable while using it.
